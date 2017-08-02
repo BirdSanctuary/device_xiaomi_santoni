@@ -102,6 +102,9 @@ persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.location
 ro.gps.agps_provider=1
 
+# Shutdown timeout
+sys.vendor.shutdown.waittime=500
+
 # Media
 media.msm8956hw=0
 mm.enable.smoothstreaming=true
