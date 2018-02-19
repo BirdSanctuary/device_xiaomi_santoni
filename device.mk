@@ -416,6 +416,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     XiaomiDoze
+
 # Google Lens
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
