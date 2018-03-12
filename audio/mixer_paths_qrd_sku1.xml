@@ -37,8 +37,8 @@
     <ctl name="Voice Tx Mute" id="1" value="-1" />
     <ctl name="Voice Tx Mute" id="2" value="500" />
     <ctl name="Voice Rx Gain" id="0" value="0" />
-    <ctl name="Voice Rx Gain" id="1" value="-2" />
-    <ctl name="Voice Rx Gain" id="2" value="15" />
+    <ctl name="Voice Rx Gain" id="1" value="-1" />
+    <ctl name="Voice Rx Gain" id="2" value="20" />
     <ctl name="Voip Tx Mute" id="0" value="0" />
     <ctl name="Voip Tx Mute" id="1" value="500" />
     <ctl name="Voip Rx Gain" id="0" value="0" />
@@ -63,8 +63,8 @@
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
     <!-- +bug 196716,zhangjianming.wt,MODIFY,20160111,other can not reciving sound  -->
-    <ctl name="DEC1 Volume" value="69" />
-    <ctl name="DEC2 Volume" value="81" />
+    <ctl name="DEC1 Volume" value="84" />
+    <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC1 MUX" value="ZERO" />
     <ctl name="ADC2 MUX" value="ZERO" />
@@ -456,7 +456,7 @@
     </path>
 
     <path name="audio-record-compress bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="48000" />
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="audio-record-compress bt-sco" />
     </path>
 
@@ -473,7 +473,7 @@
     </path>
 
     <path name="low-latency-record bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="48000" />
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="low-latency-record bt-sco" />
     </path>
 
@@ -486,8 +486,8 @@
     </path>
 
     <path name="voice-call">
-	<ctl name="DEC1 Volume" value="81" />
- 	<ctl name="DEC2 Volume" value="81" />
+	<ctl name="DEC1 Volume" value="84" />
+ 	<ctl name="DEC2 Volume" value="84" />
         <ctl name="PRI_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
@@ -557,7 +557,7 @@
     </path>
 
     <path name="vowlan-call bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="48000" />
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="vowlan-call bt-sco" />
     </path>
 
@@ -622,7 +622,7 @@
     </path>
 
     <path name="hfp-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="48000" />
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="hfp-sco" />
     </path>
 
@@ -914,8 +914,8 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-	<ctl name="DEC1 Volume" value="69" />
-	<ctl name="DEC2 Volume" value="81" />
+	<ctl name="DEC1 Volume" value="86" />
+	<ctl name="DEC2 Volume" value="86" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
@@ -1076,8 +1076,8 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <ctl name="DEC1 Volume" value="69" />
-        <ctl name="DEC2 Volume" value="81" />
+        <ctl name="DEC1 Volume" value="84" />
+        <ctl name="DEC2 Volume" value="84" />
         <path name="speaker-dmic-endfire" />
     </path>
 
